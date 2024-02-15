@@ -1,0 +1,18 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model NGO_HubConnect.Models.EventContainer
+
+<div class="card" style="width: 18rem;">
+    <img src="@(Model.Image)" asp-append-version="true" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Event_Name</h5>
+        <h6 class="card-title">Organisation Name : @Model.Organisation_Name</h6>
+        <h6 class="card-title">Location : @Model.Location</h6>
+        <h6 class="card-title">@Model.DateTime</h6>
+        <h6 class="card-title">Event Type : @Model.EventType</h6>
+        <p class="card-text">@Model.Description</p>
+        <a href="#" class="btn btn-primary">view Show</a>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+    @model IEnumerable<NGO_HubConnect.Models.EventContainer>
+
+@{
+    ViewData["Title"] = "EventContainer";
+}
+
+<h2>Events</h2>
+<hr/>
+<div class="container">
+    <div class="row">
+       @foreach (var item in Model)
+        {
+          <div class="col-md-4">
+              <partial name="_EventView" model="item"/>
+
+          </div>  
+            
+        }
+    </div>
+</div>
+}
